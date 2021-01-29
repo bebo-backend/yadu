@@ -42,9 +42,11 @@ description="Buy , Sell , Rent and Exchange product or item" />
 
 </div>
 
-
+    <h3 className=" text-center  px-1 py-3  font-weight-bolder text-uppercase show-mobile " >
+buy smarter, sell faster. </h3>
 
 <div className="    p-4  card-box  mb-4">
+
 
 <p className="font-weight-bold pb-3 mb-2 " style={{borderBottom:"1px solid rgba(0, 0, 0, 0.1)"}}>More Categories </p>
 

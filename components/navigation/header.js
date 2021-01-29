@@ -84,11 +84,11 @@ paddingTop:'16px',height:'75px'
  }}>
         <div className="container-fluid">
   
-  <i class="icon-copy dw dw-menu-1 show-mobile mx-2 font-24 text-primary my-menu" onClick={e=>setMenu(!menu)} ></i>
+  <i class="icon-copy dw dw-menu-1 show-mobile mx-2 font-24 text-dark my-menu" onClick={e=>setMenu(!menu)} ></i>
 
 <Link href="/">
           <a className="navbar-brand  mr-0 my-0" href="/">
-          <p className="mt-3 ml-2 text-white my-logo"> 
+          <p className="mt-3 ml-2 text-primary"> 
           <i className="icon-copy dw dw-hurricane ml-4 mr-2 font-weight-bold "  aria-hidden="true"  style={{fontSize:'37px'}}></i>
        <span className="font-weight-bold " >yadu </span>
           </p>
@@ -132,13 +132,15 @@ paddingTop:'16px',height:'75px'
             <div className="dropdown mx-0  my-0 py-0 text-muted" >
 										
 
-                    	<a className="btn font-24  p-0 line-height-1  dropdown-toggle pd-social " href="#" role="button" data-toggle="dropdown" style={{
+                    	<a className="btn font-24 mt-0  p-0 line-height-1  dropdown-toggle pd-social " href="#" role="button" data-toggle="dropdown" style={{
                         marginTop:'0px'}}>
                     
                   {user?.isLoggedIn && account&& account.data && account.data.user && account.data.user.image ?
-                      <img src={CLOUDINARY_URL+"w_38,h_38,g_face,r_max,c_thumb/"+account.data.user.image.image_id}  className="avatar-img " style={{width:'30px',height:'30px'}} />
+                      <img src={CLOUDINARY_URL+"w_38,h_38,g_face,r_max,c_thumb/"+account.data.user.image.image_id}  className="avatar-img " style={{width:'35px',height:'35px',
+                   marginTop:'-16px'}} />
 
-                   : <img src="/vendors/images/no-user-image.jpg" alt="...Image" className="avatar-img rounded-circle " style={{width:'30px',height:'30px'}} />
+                   : <img src="/vendors/images/form-user.png" alt="...Image" className="avatar-img rounded-circle " style={{width:'35px',height:'35px',
+                   marginTop:'-16px'}} />
                   }
                  
              <span className="font-16 ont-weight-bold ml-1 text-white username show-laptop " 
@@ -270,7 +272,7 @@ setModalUser(data);
 
 
 
-  return (   notification ?  <div className="user-notification pt-1">
+  return (   notification ?  <div className="user-notification pt-1 show-laptop ">
 
         <div className="dropdown" >
 
@@ -311,7 +313,7 @@ setModalUser(data);
                   <span className="col-4">
                     {value.sender.image ?
                      <img src={CLOUDINARY_URL+"w_38,h_38,g_face,r_max,c_thumb/"+value.sender.image.image_id}  className="avatar-img " />
-                   : <img src="/vendors/images/no-user-image.jpg"alt="...Image" className="avatar-img rounded " />
+                   : <img src="/vendors/images/form-user.png"alt="...Image" className="avatar-img rounded " />
 
                   }
                   </span>

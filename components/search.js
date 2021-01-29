@@ -89,6 +89,9 @@ router.push("/search/?"+string_url)
 
     return (  
     <>
+
+
+
 <section className="p-0 card-box mb-1 " id="bg-img" style={{borderRadius:'0px'}}   >
 
 <div className="py-3 info-data" style={{background: 'rgba(61, 32, 107, 0.72)'}} >
